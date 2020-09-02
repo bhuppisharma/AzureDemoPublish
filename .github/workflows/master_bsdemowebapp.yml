@@ -18,7 +18,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.102'
+        dotnet-version: '2.1.804'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'bsdemowebapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_627d92e013bb4cba8e64297ebbbfd326 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_90916b2df928499a9ea128199450521d }}
         package: ${{env.DOTNET_ROOT}}/myapp 
