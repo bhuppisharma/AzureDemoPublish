@@ -1,6 +1,6 @@
 using System;
 
-namespace PublishWebAppDemo.Models
+namespace AzurePublishDemo.Models
 {
     public class ErrorViewModel
     {
